@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDEATH REPORT</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="vh-100 bg-light">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-5">
+                            <h2 class="text-uppercase text-center mb-5">DEATH REPORT</h2>
+                            <form>
+                                <!-- Date -->
+                                <div class="form-group mb-4">
+                                    <label for="death_date">Date of Death</label>
+                                    <input type="date" class="form-control" id="death_date">
+                                </div>
+                            
+                                <!-- Time -->
+                                <div class="form-group mb-4">
+                                    <label for="death_time">Time of Death</label>
+                                    <input type="time" class="form-control" id="death_time">
+                                </div>
+                            
+                                <!-- Death Reason -->
+                                <div class="form-group mb-4">
+                                    <label for="death_reason">Reason of Death</label>
+                                    <textarea class="form-control" id="death_reason" rows="3" placeholder="Describe the reason of death"></textarea>
+                                </div>
+                            
+                                <!-- Visited Hospital -->
+                                <div class="form-group mb-4">
+                                    <label for="visited_hospital">Visited Hospital</label>
+                                    <textarea class="form-control" id="visited_hospital" rows="3" placeholder="Mention hospital visited (if any)"></textarea>
+                                </div>
+                            
+                                <!-- Death Place -->
+                                <div class="form-group mb-4">
+                                    <label for="death_place">Place of Death</label>
+                                    <input type="text" class="form-control" id="death_place" placeholder="Enter the place of death">
+                                </div>
+                            
+                                <!-- Submit Button -->
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

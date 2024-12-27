@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .ptprofile-body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    .ptprofile-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      max-width: 800px;
+      padding: 20px;
+    }
+    .ptprofile-image {
+      text-align: center;
+    }
+    .ptprofile-image img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+    .ptprofile-section-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .ptprofile-info-block {
+      margin-bottom: 20px;
+    }
+    .ptprofile-table {
+      width: 100%;
+      margin-top: 10px;
+      border-collapse: collapse;
+    }
+    .ptprofile-table th, .ptprofile-table td {
+      padding: 8px;
+      text-align: left;
+      border: 1px solid #dee2e6;
+    }
+    a{
+        text-decoration: none;
+    }
+  </style>
+</head>
+<body class="ptprofile-body">
+  <div class="ptprofile-card">
+    <div class="ptprofile-image">
+      <img src="pexels-shvetsa-4167542.jpg" alt="Patient Image">
+    </div>
+    <div class="ptprofile-info-block">
+      <h5 class="ptprofile-section-title">Basic Details</h5>
+      <p><strong>Name:</strong> Haneefa</p>
+      <p><strong>Age:</strong> 30</p>
+      <p><strong>Location:</strong> Clinic - Kachinikkad Manar School Opposite Road Second House</p>
+      <p><strong>Address:</strong> Kuzhiyengal (HO), Chettiyarangadi, Makkaraparamba P.O, Malappuram, Kerala</p>
+      <p><strong>Phone No:</strong> 9876543210</p>
+      <p><strong>Panchayath:</strong> Makkaraparamba</p>
+      <p><strong>Ward:</strong> 3</p>
+      <p><strong>Caretaker:</strong> Raju (9876543211)</p>
+      <p><strong>Neighbour:</strong> Deepu (9876543212)</p>
+    </div>
+    <div class="ptprofile-info-block">
+      <h5 class="ptprofile-section-title">Family Details</h5>
+      <table class="ptprofile-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Relation</th>
+            <th>Education</th>
+            <th>Job</th>
+            <th>Marital Status</th>
+            <th>Disabilities</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Raju</td>
+            <td>60</td>
+            <td>Father</td>
+            <td>10</td>
+            <td>Farmer</td>
+            <td>Yes</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Soman</td>
+            <td>20</td>
+            <td>Brother</td>
+            <td>Degree</td>
+            <td>Doctor</td>
+            <td>No</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Shaila</td>
+            <td>30</td>
+            <td>Sister</td>
+            <td>PG</td>
+            <td>Engineer</td>
+            <td>Yes</td>
+            <td>No</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="ptprofile-info-block">
+      <h5 class="ptprofile-section-title">Medical Details</h5>
+      <p><strong>Current Condition:</strong> The condition of the patient and what the doctor or nurse says about the patient.</p>
+      <p><strong>Medical History:</strong> The first medical condition of this patient.</p>
+    </div>
+    <div class="ptprofile-info-block">
+        <h5 class="ptprofile-section-title">Medicine :</h5>
+        <table class="ptprofile-table">
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Medicines</th>
+              <th>Qty</th>
+              <th>ETime</th>
+              <th>A/B FOOD</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Paracitamol</td>
+              <td>1</td>
+              <td>mrg-afn-ngt</td>
+              <td>After</td>
+              
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Naproxine</td>
+              <td>1/2</td>
+              <td>SOS</td>
+              <td>Before</td>
+              
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Dolo</td>
+              <td>1</td>
+              <td>Mrg</td>
+              <td>Before</td>
+              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="ptprofile-info-block">
+        
+        <h1><a href="reports-pt.html">REPORTS</a></h1>
+   
+      </div>
+      <div class="ptprofile-info-block">
+        <h5 class="ptprofile-section-title">Medicine :</h5>
+        <div aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-primary">
+                <a href="nhc.html">NHC</a>
+            </button>
+            <button type="button" class="btn btn-outline-primary">
+                <a href="dhc.html">DHC</a>
+            </button>
+            <button type="button" class="btn btn-outline-primary">
+                <a href="progress.html">PROGRESSION REPORT</a>
+            </button>
+            <button type="button" class="btn btn-outline-primary">
+                <a href="deathreport.html">DEATH REPORT</a>
+            </button>
+        </div>
+    </div>
+    
+    
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

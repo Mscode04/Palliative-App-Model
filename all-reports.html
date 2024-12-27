@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All REPORTS</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .neu-patient-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 10px; /* Set left and right margin */
+        }
+
+        .neu-patient-item {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center the content */
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+        }
+
+        .card {
+            border-radius: 15px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .neu-patient-item {
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="vh-100 bg-light">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                    <div class="card">
+                        <div class="card-body p-5">
+                            <h2 class="text-uppercase text-center mb-5">ALL REPORTS</h2>
+                            <form>
+                                <!-- First Row -->
+                                <div class="row">
+                                    <!-- Start Date -->
+                                    <div class="col-md-6 form-group mb-4">
+                                        <label for="start_date">Start Date</label>
+                                        <input type="date" class="form-control" id="start_date">
+                                    </div>
+
+                                    <!-- End Date -->
+                                    <div class="col-md-6 form-group mb-4">
+                                        <label for="end_date">End Date</label>
+                                        <input type="date" class="form-control" id="end_date">
+                                    </div>
+
+                                    <!-- Category -->
+                                    <div class="col-md-6 form-group mb-4">
+                                        <label for="category_select">Category</label>
+                                        <select class="form-control" id="category_select">
+                                            <option value="">Select Category</option>
+                                            <option value="category_1">NHC</option>
+                                            <option value="category_2">DHC</option>
+                                            <option value="category_3">PROGRESSION</option>
+                                            <option value="category_3">DEATH REPORT</option>
+                                            <option value="category_4">REGISTER FILE</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 form-group mb-4">
+                                        <label for="category_select">Sort</label>
+                                        <select class="form-control" id="category_select">
+                                            <option value="">Select Category</option>
+                                            <option value="category_1">TOP-BOTTOM</option>
+                                            <option value="category_2">BOTTOM-TOP</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Patient List -->
+                                <div class="neu-patient-list">
+                                    <div class="neu-patient-item">
+                                        <span><strong>Patient: Haneefa</strong> NHC</span>
+                                    </div>
+                                    <div class="neu-patient-item">
+                                        <span><strong>Patient: Raju</strong> DHC</span>
+                                    </div>
+                                    <div class="neu-patient-item">
+                                        <span><strong>Patient: Hasen</strong> REGISTER</span>
+                                    </div>
+                                    <div class="neu-patient-item">
+                                        <span><strong>Patient: Jhon</strong> NHC</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

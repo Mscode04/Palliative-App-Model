@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRESSION REPORT</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="vh-100 bg-light">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-5">
+                            <h2 class="text-uppercase text-center mb-5">PROGRESSION REPORT</h2>
+                            <form>
+
+                                <!-- Time In/Out Section -->
+                                <div class="form-group mb-4">
+                                    <label for="time_in">Time In</label>
+                                    <input type="time" class="form-control" id="time_in">
+                                </div>
+
+                                <div class="form-group mb-4">
+                                    <label for="time_out">Time Out</label>
+                                    <input type="time" class="form-control" id="time_out">
+                                </div>
+
+                                <!-- HC SI NO Section -->
+                                <div class="form-group mb-4">
+                                    <label for="hc_si_no">HC SI NO</label>
+                                    <input type="text" class="form-control" id="hc_si_no">
+                                </div>
+
+                                <!-- D/N/V/SP Home Care Number -->
+                                <div class="form-group mb-4">
+                                    <label for="home_care_number">D/N/V/SP Home Care Number</label>
+                                    <input type="number" class="form-control" id="home_care_number">
+                                </div>
+
+                                <!-- Monthly Section -->
+                                <div class="form-group mb-4">
+                                    <label for="monthly">Monthly</label>
+                                    <input type="text" class="form-control" id="monthly">
+                                </div>
+
+                                <!-- Consultation/Hospitalization -->
+                                <div class="form-group mb-4">
+                                    <label for="consultation_hospitalisation">Consultation/Hospitalization</label>
+                                    <select class="form-control" id="consultation_hospitalisation">
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                </div>
+
+                                <!-- Main Issues -->
+                                <div class="form-group mb-4">
+                                    <label for="main_issues">Main Issues</label>
+                                    <input type="text" class="form-control" id="main_issues" placeholder="main issues">
+                                    
+                                </div>
+
+                                <!-- Pharmaceutical Service -->
+                                <div class="form-group mb-4">
+                                    <label for="pharmaceutical_service">Pharmaceutical Service</label>
+                                    <select class="form-control" id="pharmaceutical_service">
+                                        <option value="aware">NA</option>
+                                        <option value="aware">O</option>
+                                        <option value="aware">SOS</option>
+                                        <option value="aware">IR-P</option>
+                                        <option value="aware">R</option>
+                                        <option value="aware">OTC</option>
+                                        <option value="aware">DUPL</option>
+                                        <option value="aware">ADV</option>
+                                        <option value="aware">MIXUP</option>
+                                        <option value="aware">ALT</option>
+                                    </select>
+                                </div>
+
+                                <!-- Disease Awareness -->
+                                <div class="form-group mb-4">
+                                    <label for="patient_disease_awareness">Disease Awareness (Patient)</label>
+                                    <select class="form-control" id="patient_disease_awareness">
+                                        <option value="aware">NA</option>
+                                        <option value="aware">-1</option>
+                                        <option value="aware">0</option>
+                                        <option value="aware">DNL</option>
+                                        <option value="aware">COL</option>
+                                        <option value="aware">1</option>
+                                        <option value="aware">2</option>
+                                    </select>
+
+                                    <label for="family_disease_awareness" class="mt-3">Disease Awareness (Family)</label>
+                                    <select class="form-control" id="family_disease_awareness">
+                                        <option value="aware">NA</option>
+                                        <option value="aware">-1</option>
+                                        <option value="aware">0</option>
+                                        <option value="aware">DNL</option>
+                                        <option value="aware">COL</option>
+                                        <option value="aware">1</option>
+                                        <option value="aware">2</option>
+                                    </select>
+                                </div>
+
+                                <!-- Financially Stable/Unstable -->
+                                <div class="form-group mb-4">
+                                    <label for="financial_status">Financially</label>
+                                    <select class="form-control" id="financial_status">
+                                        <option value="aware">NA</option>
+                                        <option value="aware">-1</option>
+                                        <option value="aware">0</option>
+                                        <option value="aware">1</option>
+                                        <option value="aware">2</option>
+                                    </select>
+                                </div>
+
+                                <!-- Emotional Status -->
+                                <div class="form-group mb-4">
+                                    <label for="emotional_status">Emotional</label>
+                                    <select class="form-control" id="emotional_status">
+                                        <option value="stable">NA</option>
+                                        <option value="stable">COP</option>
+                                        <option value="stable">LAB</option>
+                                        <option value="stable">D1</option>
+                                        <option value="stable">D2</option>
+                                        <option value="stable">D3</option>
+                                        <option value="stable">E1</option>
+                                        <option value="stable">E2</option>
+                                    </select>
+                                </div>
+
+                                <!-- Domestic Supply & External Family Supply -->
+                                <div class="form-group mb-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="domestic_supply">Domestic Supply</label>
+                                            <select class="form-control" id="domestic_supply">
+                                                <option value="aware">NA</option>
+                                                <option value="aware">-1</option>
+                                                <option value="aware">0</option>
+                                                <option value="aware">1</option>
+                                                <option value="aware">2</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="external_family_supply">External Family Supply</label>
+                                            <select class="form-control" id="external_family_supply">
+                                                <option value="aware">NA</option>
+                                                <option value="aware">-1</option>
+                                                <option value="aware">0</option>
+                                                <option value="aware">1</option>
+                                                <option value="aware">2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Community Support -->
+                                <div class="form-group mb-4">
+                                    <label for="community_support">Community Support</label>
+                                    <select class="form-control" id="community_support">
+                                        <option value="aware">NA</option>
+                                        <option value="aware">-1</option>
+                                        <option value="aware">0</option>
+                                        <option value="aware">1</option>
+                                        <option value="aware">2</option>
+                                    </select>
+                                </div>
+
+                                <!-- Palliative Team Support -->
+                                <div class="form-group mb-4">
+                                    <label for="palliative_team_support">Palliative Team Support</label>
+                                    <select class="form-control" id="palliative_team_support">
+                                        <option value="aware">NA</option>
+                                        <option value="aware">-1</option>
+                                        <option value="aware">0</option>
+                                        <option value="aware">1</option>
+                                        <option value="aware">2</option>
+                                    </select>
+                                </div>
+
+                                <!-- Environmental Hygiene -->
+                                <div class="form-group mb-4">
+                                    <label for="environmental_hygiene">Environmental Hygiene</label>
+                                    <select class="form-control" id="environmental_hygiene">
+                                        <option value="aware">NA</option>
+                                        <option value="aware">-1</option>
+                                        <option value="aware">0</option>
+                                        <option value="aware">1</option>
+                                        <option value="aware">2</option>
+                                    </select>
+                                </div>
+
+                                <!-- Head to Foot Check-up -->
+                                <div class="form-group mb-4">
+                                    <label for="head_to_foot_checkup">Head to Foot Check-up</label>
+                                    <select class="form-control" id="head_to_foot_checkup">
+                                        <option value="">Select</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+
+                                <!-- Silent Traps -->
+                                <div class="form-group mb-4">
+                                    <label for="silent_traps">Silent Traps</label>
+                                    <input type="text" class="form-control mb-4 id="silent_traps" placeholder="Silent Traps">
+                                    
+                                </div>
+
+
+                                <div class="form-group mb-4">
+                                    <label for="activity_mobility">Activity / Mobility</label>
+                                    <select class="form-control" id="activity_mobility">
+                                        <option value="">Select</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                                
+                                <!-- Glasgow Scale / General Condition -->
+                                <div class="form-group mb-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="glasgow_scale">Glasgow Scale</label>
+                                            <select class="form-control" id="glasgow_scale">
+                                                <option value="aware">NA</option>
+                                                <option value="aware">S</option>
+                                                <option value="aware">US</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="general_condition">General Condition</label>
+                                            <select class="form-control" id="general_condition">
+                                                <option value="aware">NA</option>
+                                                <option value="-1">-1</option>
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control mt-4" id="monthly" placeholder="Add more">
+                                </div>
+                                
+                                <!-- Care Status -->
+                                <div class="form-group mb-4">
+                                    <label for="care_status">Care Status</label>
+                                    <select class="form-control" id="care_status">
+                                        <option value="">Select</option>
+                                        <option value="NA">NA</option>
+                                        <option value="MCC">MCC</option>
+                                        <option value="-1">-1</option>
+                                        <option value="-2">-2</option>
+                                        <option value="-3">-3</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </div>
+                                
+                                <!-- Quality of Life -->
+                                <div class="form-group mb-4">
+                                    <label for="quality_of_life">Quality of Life (in vision patient)</label>
+                                    <select class="form-control" id="quality_of_life">
+                                        <option value="1">NA</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                                
+                                <!-- Logistic -->
+                                <div class="form-group mb-4">
+                                    <label for="logistic">Logistic</label>
+                                    <input type="text" class="form-control" id="logistic">
+                                </div>
+                                
+                                <!-- Logistic Contingencies -->
+                                <div class="form-group mb-4">
+                                    <label for="logistic_contingencies">Logistic Contingencies</label>
+                                    <input type="text" class="form-control" id="logistic_contingencies">
+                                </div>
+                                
+                                <!-- HC Plan -->
+                                <div class="form-group mb-4">
+                                    <label for="hc_plan">HC Plan (Freq + Genre + Date)</label>
+                                    <input type="text" class="form-control" id="hc_plan">
+                                </div>
+                                
+                                <!-- N/D/V/SP HC Team -->
+                                <div class="form-group mb-4">
+                                    <label for="ndvsp_hc_team">N/D/V/SP HC Team</label>
+                                    <input type="text" class="form-control" id="ndvsp_hc_team">
+                                </div>
+                                
+                                <!-- Four Text Fields -->
+                                <div class="form-group mb-4">
+                                    <label for="textfield_1">Team</label>
+                                    <input type="text" class="form-control" id="textfield_1">
+                                
+                                    <label for="textfield_2">Team</label>
+                                    <input type="text" class="form-control" id="textfield_2">
+                                
+                                    <label for="textfield_3">Team</label>
+                                    <input type="text" class="form-control" id="textfield_3">
+                                    Team</label>
+                                    <input type="text" class="form-control" id="textfield_4">
+                                </div>
+                                
+                                <!-- Home Care Plan -->
+                                <div class="form-group mb-4">
+                                    <label for="home_care_plan">Next Home Care Plan</label>
+                                    <select class="form-control" id="home_care_plan">
+                                        <option value="daily">Daily (7/1)</option>
+                                        <option value="1_day_1_week">1 Day 1 Week (1/1)</option>
+                                        <option value="2_day_1_week">2 Day 1 Week (2/1)</option>
+                                        <option value="3_day_1_week">3 Day 1 Week (3/1)</option>
+                                        <option value="1_day_2_week">1 Day 2 Week (1/2)</option>
+                                        <option value="1_day_1_month">1 Day 1 Month (1/4)</option>
+                                        <option value="1_day_1_5_month">1 Day 1.5 Month (1/6)</option>
+                                        <option value="1_day_2_month">1 Day 2 Month (1/8)</option>
+                                        <option value="1_day_3_month">1 Day 3 Month (1/12)</option>
+                                        <option value="sos">SOS</option>
+                                    </select>
+                                </div>
+                                
+                                <!-- Upload Files -->
+                                <div class="form-group mb-4">
+                                    <label for="upload_files">Upload Files</label>
+                                    <input type="file" class="form-control" id="upload_files">
+                                </div>
+                                
+                                <!-- Submit Button -->
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                                
+
+
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
