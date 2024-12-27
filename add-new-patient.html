@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Patient</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="vh-100 bg-light">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                    <div class="card" style="border-radius: 15px;">
+                        <div class="card-body p-5">
+                            <h2 class="text-uppercase text-center mb-5">Add New Patient</h2>
+                            <form>
+                                <!-- Profile Photo -->
+                                <div class="mb-4">
+                                    <label for="profilePhoto" class="form-label">Profile Photo</label>
+                                    <input type="file" class="form-control" id="profilePhoto" accept="image/*">
+                                </div>
+
+                                <!-- Registration Details -->
+                                <h4 class="mb-4">Registration Details</h4>
+                                <div class="mb-4">
+                                    <label for="registrationNumber" class="form-label">Registration Number</label>
+                                    <input type="text" class="form-control" id="registrationNumber">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="date" class="form-label">Date</label>
+                                    <input type="date" class="form-control" id="date">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="location" class="form-label">Location</label>
+                                    <input type="text" class="form-control" id="location">
+                                </div>
+
+                                <!-- Basic Details -->
+                                <h4 class="mb-4">Basic Details</h4>
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col">
+                                        <input type="number" class="form-control" placeholder="Age">
+                                    </div>
+                                    <div class="col">
+                                        <select class="form-select">
+                                            <option selected>Gender</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" placeholder="Address">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="tel" class="form-control" placeholder="Phone Number">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="password" class="form-control" placeholder="Password">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" placeholder="Panchayath">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" placeholder="Ward">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" placeholder="Caretaker">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="tel" class="form-control" placeholder="Caretaker Phone">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" placeholder="Neighbor">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="tel" class="form-control" placeholder="Neighbor Phone">
+                                </div>
+
+                                <!-- Medical Details -->
+                                <h4 class="mb-4">Medical Details</h4>
+                                <div class="mb-4">
+                                    <textarea class="form-control" placeholder="Medical Condition"></textarea>
+                                </div>
+                                <div class="mb-4">
+                                    <select class="form-select">
+                                        <option selected>Patient Awareness About Disease</option>
+                                        <option value="known">Known</option>
+                                        <option value="unknown">Unknown</option>
+                                    </select>
+                                </div>
+
+                                <!-- Basic Matters -->
+                                <h4 class="mb-4">Basic Matters</h4>
+                                <div class="mb-4">
+                                    <select class="form-select">
+                                        <option selected>Food</option>
+                                        <option value="good">Good</option>
+                                        <option value="average">Average</option>
+                                        <option value="poor">Poor</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <select class="form-select">
+                                        <option selected>Sleep</option>
+                                        <option value="good">Good</option>
+                                        <option value="average">Average</option>
+                                        <option value="poor">Poor</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <select class="form-select">
+                                        <option selected>Pee</option>
+                                        <option value="good">Good</option>
+                                        <option value="average">Average</option>
+                                        <option value="poor">Poor</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <select class="form-select">
+                                        <option selected>Poop</option>
+                                        <option value="good">Good</option>
+                                        <option value="average">Average</option>
+                                        <option value="poor">Poor</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <select class="form-select">
+                                        <option selected>Bath</option>
+                                        <option value="good">Daily</option>
+                                        <option value="average">Onece a Week</option>
+                                        <option value="average">Hand Cleaning</option>
+                                        <option value="poor">twice a Week</option>
+                                    </select>
+                                </div>
+                                <!-- Repeat for Pee, Pop, Bath -->
+
+                                <!-- Family Details -->
+                                <h4 class="mb-4">Family Details</h4>
+                                <div id="familyDetails">
+                                    <div class="row mb-4">
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Full Name">
+                                        </div>
+                                        <div class="col">
+                                            <input type="number" class="form-control" placeholder="Age">
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="text" class="form-control" placeholder="Relation">
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="text" class="form-control" placeholder="Education">
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="text" class="form-control" placeholder="Job">
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="text" class="form-control" placeholder="Marital Status">
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="text" class="form-control" placeholder="Disabilities">
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-secondary mb-4" onclick="addFamilyDetail()">+ Add
+                                    More Family Details</button>
+
+                                <!-- Welfare Schemes -->
+                                <h4 class="mb-4">Welfare Schemes</h4>
+                                <div class="mb-4">
+                                    <select class="form-select">
+                                        <option selected>Ration</option>
+                                        <option value="apl">APL</option>
+                                        <option value="bpl">BPL</option>
+                                        <option value="aay">AAY</option>
+                                        <option value="phh">PHH</option>
+                                        <option value="ap">AP</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="form-control" placeholder="Other"></textarea>
+                                </div>
+
+                                <!-- Remaining Sections -->
+                                <!-- General Details -->
+                                <h4 class="mb-4">General Details</h4>
+                                <div class="mb-4">
+                                    <select class="form-select">
+                                        <option selected>General Status</option>
+                                        <option value="stable">Stable</option>
+                                        <option value="unstable">Unstable</option>
+                                        <option value="average">Average</option>
+                                    </select>
+                                </div>
+
+                                <!-- Head to Foot Checkup -->
+                                <h4 class="mb-4">Head to Foot Checkup</h4>
+                                <div class="mb-4">
+                                    <label class="form-label">Skin</label>
+                                    <select class="form-select">
+                                        <option selected>Select Skin Type</option>
+                                        <option value="dry">Dry</option>
+                                        <option value="oily">Oily</option>
+                                        <option value="normal">Normal</option>
+                                        <option value="combination">Combination</option>
+                                        <option value="sensitive">Sensitive</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label">Hair</label>
+                                    <select class="form-select">
+                                        <option selected>Select Hair Condition</option>
+                                        <option value="clean">Clean</option>
+                                        <option value="unclean">Unclean</option>
+                                        <option value="normal">Normal</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label">Nails</label>
+                                    <select class="form-select">
+                                        <option selected>Select Nail Condition</option>
+                                        <option value="clean">Clean</option>
+                                        <option value="unclean">Unclean</option>
+                                        <option value="normal">Normal</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label">Mouth</label>
+                                    <select class="form-select">
+                                        <option selected>Select Mouth Condition</option>
+                                        <option value="oralCandidiasis">Oral Candidiasis</option>
+                                        <option value="glottitis">Glottitis</option>
+                                        <option value="clean">Clean</option>
+                                        <option value="unclean">Unclean</option>
+                                        <option value="normal">Normal</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label">Perineum</label>
+                                    <select class="form-select">
+                                        <option selected>Select Perineum Condition</option>
+                                        <option value="clean">Clean</option>
+                                        <option value="unclean">Unclean</option>
+                                        <option value="normal">Normal</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label">Hidden Area</label>
+                                    <select class="form-select">
+                                        <option selected>Select Hidden Area Condition</option>
+                                        <option value="clean">Clean</option>
+                                        <option value="unclean">Unclean</option>
+                                        <option value="normal">Normal</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label">Pressure Area</label>
+                                    <select class="form-select">
+                                        <option selected>Select Pressure Area Condition</option>
+                                        <option value="clean">Clean</option>
+                                        <option value="unclean">Unclean</option>
+                                        <option value="normal">Normal</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label">Joints</label>
+                                    <select class="form-select">
+                                        <option selected>Select Joint Condition</option>
+                                        <option value="movable">Movable</option>
+                                        <option value="fixed">Fixed</option>
+                                        <option value="slightlyMovable">Slightly Movable</option>
+                                        <option value="freely">Freely Movable</option>
+                                    </select>
+                                </div>
+
+                                <!-- Vital Signs -->
+                                <h4 class="mb-4">Vital Signs</h4>
+                                <div class="mb-4">
+                                    <label class="form-label">Pulse</label>
+                                    <input type="number" class="form-control" placeholder="Enter Pulse Rate">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label">Blood Pressure</label>
+                                    <input type="text" class="form-control"
+                                        placeholder="Enter Blood Pressure (e.g., 120/80)">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label">Respiratory Rate (RR)</label>
+                                    <input type="number" class="form-control" placeholder="Enter RR">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label">Scaly/Cared Area</label>
+                                    <input type="text" class="form-control" placeholder="Describe Scaly/Cared Area">
+                                </div>
+                                <div class="mb-4">
+                                    <label class="form-label">Temperature</label>
+                                    <input type="number" step="0.1" class="form-control"
+                                        placeholder="Enter Temperature in °C">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="profilePhoto" class="form-label">Other Files</label>
+                                    <input type="file" class="form-control" id="profilePhoto" accept="image/*">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="profilePhoto" class="form-label">Family Tree</label>
+                                    <input type="file" class="form-control" id="profilePhoto" accept="image/*">
+                                </div>
+                                <div class="d-flex justify-content-center mt-4">
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function addFamilyDetail() {
+            const familyDetails = document.getElementById('familyDetails');
+            const newDetail = `
+                <div class="row mb-4">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Full Name">
+                    </div>
+                    <div class="col">
+                        <input type="number" class="form-control" placeholder="Age">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <input type="text" class="form-control" placeholder="Relation">
+                </div>
+                <div class="mb-4">
+                    <input type="text" class="form-control" placeholder="Education">
+                </div>
+                <div class="mb-4">
+                    <input type="text" class="form-control" placeholder="Job">
+                </div>
+                <div class="mb-4">
+                    <input type="text" class="form-control" placeholder="Marital Status">
+                </div>
+                <div class="mb-4">
+                    <input type="text" class="form-control" placeholder="Disabilities">
+                </div>`;
+            familyDetails.insertAdjacentHTML('beforeend', newDetail);
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
