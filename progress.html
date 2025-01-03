@@ -47,16 +47,34 @@
                                     <label for="monthly">Monthly</label>
                                     <input type="text" class="form-control" id="monthly">
                                 </div>
+                                <div class="form-group mb-4">
+                                    <label for="monthly">Last Home Care Date</label>
+                                    <input type="date" class="form-control" id="monthly">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="consultation_hospitalisation">Last Home Care</label>
+                                    <select class="form-control" id="consultation_hospitalisation">
+                                        <option value="yes">NHC</option>
+                                        <option value="no">NHC(E)</option>
+                                        <option value="no">DHC</option>
+                                        <option value="no">VHC</option>
+                                        <option value="no">GVHC</option>
+                                        <option value="no">SPHC</option>
+                                    </select>
+                                </div>
 
                                 <!-- Consultation/Hospitalization -->
                                 <div class="form-group mb-4">
                                     <label for="consultation_hospitalisation">Consultation/Hospitalization</label>
+                                    <input type="text" class="form-control" id="main_issues" placeholder="Consultation/Hospitalization">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="consultation_hospitalisation">Is this is Emergency</label>
                                     <select class="form-control" id="consultation_hospitalisation">
                                         <option value="yes">Yes</option>
                                         <option value="no">No</option>
                                     </select>
                                 </div>
-
                                 <!-- Main Issues -->
                                 <div class="form-group mb-4">
                                     <label for="main_issues">Main Issues</label>
@@ -80,7 +98,23 @@
                                         <option value="aware">ALT</option>
                                     </select>
                                 </div>
-
+                                <div class="form-group mb-4">
+                                    <label for="head_to_foot_checkup">The Primary One</label>
+                                    <select class="form-control" id="head_to_foot_checkup">
+                                        <option value="">Select</option>
+                                        <option value="1">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
                                 <!-- Disease Awareness -->
                                 <div class="form-group mb-4">
                                     <label for="patient_disease_awareness">Disease Awareness (Patient)</label>
@@ -132,7 +166,11 @@
                                         <option value="stable">E2</option>
                                     </select>
                                 </div>
-
+                                <div class="form-group mb-4">
+                                    <label for="main_issues">Caretacker</label>
+                                    <input type="text" class="form-control" id="main_issues" placeholder="Caretacker">
+                                    
+                                </div>
                                 <!-- Domestic Supply & External Family Supply -->
                                 <div class="form-group mb-4">
                                     <div class="row">
@@ -239,23 +277,33 @@
                                         <div class="col-md-6">
                                             <label for="glasgow_scale">Glasgow Scale</label>
                                             <select class="form-control" id="glasgow_scale">
-                                                <option value="aware">NA</option>
-                                                <option value="aware">S</option>
-                                                <option value="aware">US</option>
+                                                <option value="aware">1/15</option>
+  <option value="2/15">2/15</option>
+  <option value="3/15">3/15</option>
+  <option value="4/15">4/15</option>
+  <option value="5/15">5/15</option>
+  <option value="6/15">6/15</option>
+  <option value="7/15">7/15</option>
+  <option value="8/15">8/15</option>
+  <option value="9/15">9/15</option>
+  <option value="10/15">10/15</option>
+  <option value="11/15">11/15</option>
+  <option value="12/15">12/15</option>
+  <option value="13/15">13/15</option>
+  <option value="14/15">14/15</option>
+  <option value="15/15">15/15</option>
                                             </select>
                                         </div>
                                         <div class="col-md-6">
                                             <label for="general_condition">General Condition</label>
                                             <select class="form-control" id="general_condition">
                                                 <option value="aware">NA</option>
-                                                <option value="-1">-1</option>
-                                                <option value="0">0</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
+                                                <option value="aware">S</option>
+                                                <option value="aware">US</option>
                                             </select>
                                         </div>
                                     </div>
-                                    <input type="text" class="form-control mt-4" id="monthly" placeholder="Add more">
+                                    
                                 </div>
                                 
                                 <!-- Care Status -->
@@ -264,6 +312,7 @@
                                     <select class="form-control" id="care_status">
                                         <option value="">Select</option>
                                         <option value="NA">NA</option>
+                                        <option value="NA">0</option>
                                         <option value="MCC">MCC</option>
                                         <option value="-1">-1</option>
                                         <option value="-2">-2</option>
@@ -293,10 +342,6 @@
                                 </div>
                                 
                                 <!-- Logistic -->
-                                <div class="form-group mb-4">
-                                    <label for="logistic">Logistic</label>
-                                    <input type="text" class="form-control" id="logistic">
-                                </div>
                                 
                                 <!-- Logistic Contingencies -->
                                 <div class="form-group mb-4">
